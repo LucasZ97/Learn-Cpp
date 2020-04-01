@@ -11,7 +11,9 @@ public:
 	{
 		cout << "test " << endl;
 	}
-	char char* mStr
+	/*char char* mStr;*/
+
+	char mStr;
 };
 
 int main()
