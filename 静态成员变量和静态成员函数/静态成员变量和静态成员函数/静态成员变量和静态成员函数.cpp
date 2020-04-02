@@ -7,10 +7,20 @@ class Person
 public:
 	static int m_Age; //加入static，就是静态成员变量，会共享数据。
 	//静态成员变量，在类内声明，类外进行初始化。
+	int m_A;
+	static void func()
+	{
+		cout << "func " << endl;
+		//m_A = 10;   //静态函数内的变量也要是静态的
 
+	}
 
 private:
 	static int m_Other; //私有权限
+	static void func2()
+	{
+		cout << "func2的调用" <<endl;
+	}
 };
 
 int Person::m_Age = 0;
@@ -33,8 +43,12 @@ int test01()
 	cout << "通过类名访问Age" << Person::m_Age <<endl;
 	/*cout << "通过类名访问other" << Person::m_Other << endl;*/  //不可访问
 
+	p1.func();
+	p2.func();
 
 
+
+	//Person::func2();
 	return 0;
 }
 
