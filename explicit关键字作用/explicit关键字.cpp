@@ -7,7 +7,7 @@ class MyString
 public:
 	MyString(const char * str)
 	{
-		//
+	
 	};
 	explicit MyString(int a)
 	{
@@ -21,7 +21,7 @@ public:
 void test01()
 {
 	MyString str = "abc";
-	MyString str3 = 10;
+	//MyString str3 = 10;  //MyString str3 = MyString(10)
 	MyString str2(10);
 }
 //explicit防止隐式类型转换
@@ -29,7 +29,7 @@ void test01()
 int main()
 {
 	
-
+	test01();
 	system("pause");
 	return EXIT_SUCCESS;
 }
