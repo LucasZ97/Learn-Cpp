@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="多态案例计算机类.cpp">
+    <ClCompile Include="组装电脑.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
